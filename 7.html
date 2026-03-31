@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="timer1">100</p>
+    <button id="button1">submit</button>
+    <script>
+        let btn1=document.getElementById("button1");
+        let tmr1=document.getElementById("timer1");
+        btn1.onclick=function reduce(){
+            let tmr2=Number(tmr1.innerText)-1;
+            tmr1.innerHTML+=`<p id="timer1">${tmr2}100</p>`;
+            alert(tmr1.innerText);
+        }
+    </script>
+</body>
+</html>
